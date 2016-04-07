@@ -34,6 +34,8 @@
 		04827DB31CB3AC5100E51DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04827DB21CB3AC5100E51DEE /* Assets.xcassets */; };
 		04827DB61CB3AC5100E51DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04827DB41CB3AC5100E51DEE /* LaunchScreen.storyboard */; };
 		04827DF31CB3B22C00E51DEE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04827DF21CB3B22C00E51DEE /* TableViewCell.swift */; };
+		04FDA7AD1CB5F4910053F5B3 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 04FDA7AC1CB5F4900053F5B3 /* Readme */; };
+		04FDA7AF1CB5F4AA0053F5B3 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 04FDA7AE1CB5F4AA0053F5B3 /* Readme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		04827DB51CB3AC5100E51DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04827DB71CB3AC5100E51DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04827DF21CB3B22C00E51DEE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		04FDA7AC1CB5F4900053F5B3 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		04FDA7AE1CB5F4AA0053F5B3 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,7 @@
 		04827D9F1CB3AC5000E51DEE = {
 			isa = PBXGroup;
 			children = (
+				04FDA7AB1CB5F4760053F5B3 /* Tool */,
 				0407B25E1CB3B4EA008EE9F0 /* Login and ForgetPassword */,
 				0407B2541CB3B4D0008EE9F0 /* Bills */,
 				0407B2501CB3B4CB008EE9F0 /* Account */,
@@ -269,6 +274,7 @@
 				04827DDE1CB3B20300E51DEE /* Mine */,
 				04827DAA1CB3AC5000E51DEE /* BuuYou */,
 				04827DA91CB3AC5000E51DEE /* Products */,
+				04FDA7A81CB5F44E0053F5B3 /* Third Package */,
 			);
 			sourceTree = "<group>";
 		};
@@ -362,6 +368,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		04FDA7A81CB5F44E0053F5B3 /* Third Package */ = {
+			isa = PBXGroup;
+			children = (
+				04FDA7AC1CB5F4900053F5B3 /* Readme */,
+			);
+			path = "Third Package";
+			sourceTree = "<group>";
+		};
+		04FDA7AB1CB5F4760053F5B3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				04FDA7AE1CB5F4AA0053F5B3 /* Readme */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +442,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FDA7AF1CB5F4AA0053F5B3 /* Readme in Resources */,
+				04FDA7AD1CB5F4910053F5B3 /* Readme in Resources */,
 				0407B2921CB3B628008EE9F0 /* Readme in Resources */,
 				0407B2841CB3B5D2008EE9F0 /* Readme in Resources */,
 				0407B27E1CB3B5A6008EE9F0 /* Readme in Resources */,

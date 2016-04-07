@@ -2,7 +2,7 @@
 //  TableViewCell.swift
 //  BuuYou
 //
-//  Created by niu on 16/4/5.
+//  Created by niuyao on 16/4/5.
 //  Copyright © 2016年 北京校酷网络科技有限公司. All rights reserved.
 //
 

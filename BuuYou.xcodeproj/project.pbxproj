@@ -28,14 +28,24 @@
 		0407B2961CB3B642008EE9F0 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 0407B2951CB3B642008EE9F0 /* Readme */; };
 		0407B2981CB3B64D008EE9F0 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 0407B2971CB3B64D008EE9F0 /* Readme */; };
 		0407B29A1CB3B657008EE9F0 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 0407B2991CB3B657008EE9F0 /* Readme */; };
+		04824E411CBA930B00B03234 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04824E401CBA930B00B03234 /* ForgetPasswordViewController.swift */; };
+		04824E431CBA9DB300B03234 /* ForgetPasswordSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04824E421CBA9DB300B03234 /* ForgetPasswordSetViewController.swift */; };
 		04827DAC1CB3AC5100E51DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04827DAB1CB3AC5100E51DEE /* AppDelegate.swift */; };
 		04827DAE1CB3AC5100E51DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04827DAD1CB3AC5100E51DEE /* ViewController.swift */; };
 		04827DB11CB3AC5100E51DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04827DAF1CB3AC5100E51DEE /* Main.storyboard */; };
 		04827DB31CB3AC5100E51DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04827DB21CB3AC5100E51DEE /* Assets.xcassets */; };
 		04827DB61CB3AC5100E51DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04827DB41CB3AC5100E51DEE /* LaunchScreen.storyboard */; };
 		04827DF31CB3B22C00E51DEE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04827DF21CB3B22C00E51DEE /* TableViewCell.swift */; };
+		048524871CB6799400303D4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048524861CB6799400303D4E /* LoginViewController.swift */; };
+		04CCCC5A1CBC86460030D494 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCCC591CBC86460030D494 /* MainTabbarViewController.swift */; };
+		04CCCC5C1CBCC3BE0030D494 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCCC5B1CBCC3BE0030D494 /* Http.swift */; };
+		04E808601CB8F022002DCA34 /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8085F1CB8F022002DCA34 /* Url.swift */; };
+		04E808621CB8F282002DCA34 /* Httpresult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E808611CB8F282002DCA34 /* Httpresult.swift */; };
+		04E808651CB8F512002DCA34 /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E808641CB8F512002DCA34 /* XKeyBoard.m */; };
+		04E808691CB8F5CC002DCA34 /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E808681CB8F5CC002DCA34 /* JSONJoy.swift */; };
 		04FDA7AD1CB5F4910053F5B3 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 04FDA7AC1CB5F4900053F5B3 /* Readme */; };
 		04FDA7AF1CB5F4AA0053F5B3 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = 04FDA7AE1CB5F4AA0053F5B3 /* Readme */; };
+		437E34512E82922EE508532C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22842E2BE30D9AA100FB0818 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +70,8 @@
 		0407B2951CB3B642008EE9F0 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		0407B2971CB3B64D008EE9F0 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		0407B2991CB3B657008EE9F0 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		04824E401CBA930B00B03234 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgetPasswordViewController.swift; path = ../../Login/Controller/ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		04824E421CBA9DB300B03234 /* ForgetPasswordSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordSetViewController.swift; sourceTree = "<group>"; };
 		04827DA81CB3AC5000E51DEE /* BuuYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuuYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04827DAB1CB3AC5100E51DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04827DAD1CB3AC5100E51DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +80,21 @@
 		04827DB51CB3AC5100E51DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04827DB71CB3AC5100E51DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04827DF21CB3B22C00E51DEE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		048524861CB6799400303D4E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0485248B1CB67D9700303D4E /* BuuYou-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuuYou-Bridging-Header.h"; sourceTree = "<group>"; };
+		04CCCC591CBC86460030D494 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		04CCCC5B1CBCC3BE0030D494 /* Http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		04E8085F1CB8F022002DCA34 /* Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
+		04E808611CB8F282002DCA34 /* Httpresult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Httpresult.swift; sourceTree = "<group>"; };
+		04E808631CB8F50B002DCA34 /* XKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKeyBoard.h; sourceTree = "<group>"; };
+		04E808641CB8F512002DCA34 /* XKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKeyBoard.m; sourceTree = "<group>"; };
+		04E808661CB8F545002DCA34 /* BuuYou-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuuYou-Bridging-Header.h"; sourceTree = "<group>"; };
+		04E808681CB8F5CC002DCA34 /* JSONJoy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONJoy.swift; sourceTree = "<group>"; };
 		04FDA7AC1CB5F4900053F5B3 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		04FDA7AE1CB5F4AA0053F5B3 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		1BB0746EB973836E39DF6445 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		22842E2BE30D9AA100FB0818 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		610E98224E9AB25A4EB20E18 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437E34512E82922EE508532C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +233,8 @@
 		0407B2601CB3B4EA008EE9F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04824E401CBA930B00B03234 /* ForgetPasswordViewController.swift */,
+				04824E421CBA9DB300B03234 /* ForgetPasswordSetViewController.swift */,
 				0407B2731CB3B541008EE9F0 /* Readme */,
 			);
 			path = Controller;
@@ -216,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				0407B2751CB3B55D008EE9F0 /* Readme */,
+				04CCCC5B1CBCC3BE0030D494 /* Http.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				0407B2791CB3B592008EE9F0 /* Readme */,
+				048524861CB6799400303D4E /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -250,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				0407B27B1CB3B59D008EE9F0 /* Readme */,
+				04E808611CB8F282002DCA34 /* Httpresult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +306,8 @@
 				04827DAA1CB3AC5000E51DEE /* BuuYou */,
 				04827DA91CB3AC5000E51DEE /* Products */,
 				04FDA7A81CB5F44E0053F5B3 /* Third Package */,
+				6456205D39814A908895E4C5 /* Frameworks */,
+				DB57F9364DE615341CD1FC04 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,12 +322,14 @@
 		04827DAA1CB3AC5000E51DEE /* BuuYou */ = {
 			isa = PBXGroup;
 			children = (
+				04CCCC561CBC85A50030D494 /* MainTabBarController */,
 				04827DAB1CB3AC5100E51DEE /* AppDelegate.swift */,
 				04827DAD1CB3AC5100E51DEE /* ViewController.swift */,
 				04827DAF1CB3AC5100E51DEE /* Main.storyboard */,
 				04827DB21CB3AC5100E51DEE /* Assets.xcassets */,
 				04827DB41CB3AC5100E51DEE /* LaunchScreen.storyboard */,
 				04827DB71CB3AC5100E51DEE /* Info.plist */,
+				0485248B1CB67D9700303D4E /* BuuYou-Bridging-Header.h */,
 			);
 			path = BuuYou;
 			sourceTree = "<group>";
@@ -368,10 +403,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		04CCCC561CBC85A50030D494 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				04CCCC591CBC86460030D494 /* MainTabbarViewController.swift */,
+			);
+			name = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		04E808671CB8F5B4002DCA34 /* Jsonjoy */ = {
+			isa = PBXGroup;
+			children = (
+				04E808681CB8F5CC002DCA34 /* JSONJoy.swift */,
+			);
+			path = Jsonjoy;
+			sourceTree = "<group>";
+		};
 		04FDA7A81CB5F44E0053F5B3 /* Third Package */ = {
 			isa = PBXGroup;
 			children = (
+				04E808641CB8F512002DCA34 /* XKeyBoard.m */,
+				04E808631CB8F50B002DCA34 /* XKeyBoard.h */,
 				04FDA7AC1CB5F4900053F5B3 /* Readme */,
+				04E808661CB8F545002DCA34 /* BuuYou-Bridging-Header.h */,
 			);
 			path = "Third Package";
 			sourceTree = "<group>";
@@ -379,9 +433,28 @@
 		04FDA7AB1CB5F4760053F5B3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				04E808671CB8F5B4002DCA34 /* Jsonjoy */,
 				04FDA7AE1CB5F4AA0053F5B3 /* Readme */,
+				04E8085F1CB8F022002DCA34 /* Url.swift */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		6456205D39814A908895E4C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22842E2BE30D9AA100FB0818 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB57F9364DE615341CD1FC04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				610E98224E9AB25A4EB20E18 /* Pods.debug.xcconfig */,
+				1BB0746EB973836E39DF6445 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,9 +464,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04827DBA1CB3AC5100E51DEE /* Build configuration list for PBXNativeTarget "BuuYou" */;
 			buildPhases = (
+				50920369A40FB79ADD439A7E /* Check Pods Manifest.lock */,
 				04827DA41CB3AC5000E51DEE /* Sources */,
 				04827DA51CB3AC5000E51DEE /* Frameworks */,
 				04827DA61CB3AC5000E51DEE /* Resources */,
+				854597FF1BE92CDB11010536 /* Embed Pods Frameworks */,
+				00BA1F04DF19DD7C201D316F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -473,14 +549,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00BA1F04DF19DD7C201D316F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50920369A40FB79ADD439A7E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		854597FF1BE92CDB11010536 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04827DA41CB3AC5000E51DEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E808651CB8F512002DCA34 /* XKeyBoard.m in Sources */,
+				04CCCC5A1CBC86460030D494 /* MainTabbarViewController.swift in Sources */,
+				04E808601CB8F022002DCA34 /* Url.swift in Sources */,
+				048524871CB6799400303D4E /* LoginViewController.swift in Sources */,
+				04824E431CBA9DB300B03234 /* ForgetPasswordSetViewController.swift in Sources */,
+				04CCCC5C1CBCC3BE0030D494 /* Http.swift in Sources */,
 				04827DF31CB3B22C00E51DEE /* TableViewCell.swift in Sources */,
+				04E808691CB8F5CC002DCA34 /* JSONJoy.swift in Sources */,
+				04E808621CB8F282002DCA34 /* Httpresult.swift in Sources */,
 				04827DAE1CB3AC5100E51DEE /* ViewController.swift in Sources */,
 				04827DAC1CB3AC5100E51DEE /* AppDelegate.swift in Sources */,
+				04824E411CBA930B00B03234 /* ForgetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,23 +722,32 @@
 		};
 		04827DBB1CB3AC5100E51DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 610E98224E9AB25A4EB20E18 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BuuYou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaocool.cn.BuuYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Third Package/BuuYou-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		04827DBC1CB3AC5100E51DEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB0746EB973836E39DF6445 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BuuYou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaocool.cn.BuuYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Third Package/BuuYou-Bridging-Header.h";
 			};
 			name = Release;
 		};

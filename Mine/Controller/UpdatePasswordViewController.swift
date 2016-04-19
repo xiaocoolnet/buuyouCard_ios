@@ -1,44 +1,31 @@
 //
-//  ForgetPasswordViewController.swift
+//  UpdatePasswordViewController.swift
 //  BuuYou
 //
-//  Created by 牛尧 on 16/4/10.
+//  Created by 牛尧 on 16/4/19.
 //  Copyright © 2016年 北京校酷网络科技有限公司. All rights reserved.
 //
-
 import UIKit
 import Alamofire
 import MBProgressHUD
-class ForgetPasswordViewController: UIViewController {
-    
+class UpdatePasswordViewController: UIViewController {
+
     @IBOutlet var AccountText: UITextField!
-    @IBOutlet var phoneNumberText: UITextField!
-    @IBOutlet var codeText: UITextField!
-    @IBOutlet var codeLabel: UILabel!
-    @IBOutlet var getCodeButton: UIButton!
-    @IBOutlet var nextButton: UIButton!
+    @IBOutlet var OldPassword: UITextField!
     @IBOutlet var NewPassword: UITextField!
-    var timeNamal:NSTimer!
-    var timeNow:NSTimer!
-    var count:Int = 60
-    var alerView0:UIAlertView!
-    var alerView1:UIAlertView!
-    var alerView2:UIAlertView!
-    var alerView3:UIAlertView!
-    var alerView4:UIAlertView!
-    //定义全局变量data
-    var data:String!
+    @IBOutlet var againPassword: UITextField!
+    @IBOutlet var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //GetCode()
         self.navigationController?.navigationBar.hidden = false
-        getCodeButton.addTarget(self, action: Selector("GetCode"), forControlEvents: UIControlEvents.TouchUpInside)
+        //getCodeButton.addTarget(self, action: Selector("GetCode"), forControlEvents: UIControlEvents.TouchUpInside)
         nextButton.addTarget(self, action: Selector("Next"), forControlEvents: UIControlEvents.TouchUpInside)
-        codeLabel.hidden = true
+        //codeLabel.hidden = true
         // Do any additional setup after loading the view.
     }
-    
+    /*
     func GetCode(){
         //if (AccountText.text!.isEmpty||AccountText.text?.characters.count != 11)
         
@@ -53,7 +40,7 @@ class ForgetPasswordViewController: UIViewController {
             alerView.tag = 1
             alerView.show()
         }
-         else if (phoneNumberText.text!.isEmpty||phoneNumberText.text?.characters.count != 11)
+        else if (phoneNumberText.text!.isEmpty||phoneNumberText.text?.characters.count != 11)
         {
             var alerView:UIAlertView = UIAlertView()
             alerView.title = "手机号输入错误"
@@ -80,19 +67,20 @@ class ForgetPasswordViewController: UIViewController {
         }
         
     }
-    
+    */
     func Next(){
         if PandKong()==true{
-            Yanzheng(data)
+            Yanzheng()
         }
     }
     //有参函数，使用data
-    func Yanzheng(data:String){
+    func Yanzheng(){
         let url = apiUrl+"userupdpwd"
         let params = [
-             "data":"\(self.AccountText.text!),\(self.codeText.text!),\(self.NewPassword.text!),2,\(data)"
+            //"data":"\(self.AccountText.text!),\(self.OldPassword.text!),\(self.NewPassword.text!),2,\(data)"
             //"Email":AccountText.text!,
-           // "ValiCode":codeText.text!
+            // "ValiCode":codeText.text!
+            "data":"\(self.AccountText.text!),\(self.OldPassword.text!),\(self.NewPassword.text!),1"
         ]
         Alamofire.request(.GET, url, parameters: params).response { request, response, json, error in
             if(error != nil){
@@ -151,25 +139,16 @@ class ForgetPasswordViewController: UIViewController {
             return false
         }
         
-        if(phoneNumberText.text!.isEmpty){
+        if(OldPassword.text!.isEmpty){
             let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
             hud.mode = MBProgressHUDMode.Text
-            hud.labelText = "请输入手机号"
+            hud.labelText = "请输入原密码"
             hud.margin = 10.0
             hud.removeFromSuperViewOnHide = true
             hud.hide(true, afterDelay: 1)
             return false
         }
         
-        if(codeText.text!.isEmpty){
-            let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-            hud.mode = MBProgressHUDMode.Text
-            hud.labelText = "请输入验证码"
-            hud.margin = 10.0
-            hud.removeFromSuperViewOnHide = true
-            hud.hide(true, afterDelay: 1)
-            return false
-        }
         if(NewPassword.text!.isEmpty){
             let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
             hud.mode = MBProgressHUDMode.Text
@@ -179,46 +158,37 @@ class ForgetPasswordViewController: UIViewController {
             hud.hide(true, afterDelay: 1)
             return false
         }
-        return true
-        
-    }
-    
-    func timeDow()
-    {
-        var time1 = NSTimer.scheduledTimerWithTimeInterval(1.0, target:self, selector: "updateTime", userInfo: nil, repeats: true)
-        timeNow = time1
-    }
-    
-    func showRepeatButton()
-    {
-        codeLabel.hidden=true
-        getCodeButton.hidden = false
-        getCodeButton.enabled = true
-    }
-    
-    func updateTime()
-    {
-        count--
-        if (count <= 0)
-        {
-            count = 60
-            self.showRepeatButton()
-            timeNow.invalidate()
+        if(againPassword.text!.isEmpty){
+            let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+            hud.mode = MBProgressHUDMode.Text
+            hud.labelText = "请再次输入密码"
+            hud.margin = 10.0
+            hud.removeFromSuperViewOnHide = true
+            hud.hide(true, afterDelay: 1)
+            return false
         }
-        codeLabel.text = "\(count)S"
-        
+        if(NewPassword.text! != againPassword.text! ){
+            let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+            hud.mode = MBProgressHUDMode.Text
+            hud.labelText = "请输入相同密码"
+            hud.margin = 10.0
+            hud.removeFromSuperViewOnHide = true
+            hud.hide(true, afterDelay: 1)
+            return false
+        }
+        else{
+            return true
+        }
     }
     
+      /*
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         
         if alertView.tag == 0
         {
-            if buttonIndex == 1
+            if buttonIndex == 1.
             {
                 self.senderMessage()
-                getCodeButton.hidden = true
-                codeLabel.hidden = false
-                self.timeDow()
             }
         }
         if alertView.tag == 1
@@ -237,10 +207,6 @@ class ForgetPasswordViewController: UIViewController {
             if(error != nil){
             }
             else{
-                //result.data.string
-                //print(request)
-                //print(json)
-                //print(response)
                 print("request是")
                 print(request!)
                 print("response是")
@@ -259,20 +225,21 @@ class ForgetPasswordViewController: UIViewController {
                     hud.removeFromSuperViewOnHide = true
                     hud.hide(true, afterDelay: 1)
                 }
-                //解析出发送验证码接口里的那个date字符串ValiStr
+                
                 if(status.status == 1){
                     print("Success")
                     print(status.data)
-                   self.data = status.data
+                    self.data = status.data
                     
-            }
+                }
                 
             }
         }
     }
-
+*/
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+    
 }

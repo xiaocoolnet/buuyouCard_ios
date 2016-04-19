@@ -70,8 +70,6 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
             let url = apiUrl+"userlogin"
         let param = [
              "data":"\(self.AccountText.text!),\(self.PasswordText.text!)"
-            //"phone":self.AccountText.text!,
-            //"password":self.PasswordText.text!
         ]
         Alamofire.request(.GET, url, parameters: param).response { request, response, json, error in
             if(error != nil){
@@ -104,9 +102,14 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
                     //hud.margin = 10.0
                     hud.removeFromSuperViewOnHide = true
                     hud.hide(true, afterDelay: 1)
+                    //缓存用户输入的账号和密码
+                    let Account = NSUserDefaults.standardUserDefaults().setObject(self.AccountText.text, forKey: "Account")
                     
+                    let Password = NSUserDefaults.standardUserDefaults().setObject(self.PasswordText.text, forKey: "Password")
+                   
                     let Userid = NSUserDefaults.standardUserDefaults()
                     Userid.setValue(result.data?.Userid, forKey: "Userid")
+                   
                     
                     //let classid = NSUserDefaults.standardUserDefaults()
                     //classid.setValue(result.data?.classid, forKey: "classid")
@@ -160,11 +163,6 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         }
     }
     */
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     //点击return收回键盘
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
@@ -179,15 +177,5 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }
 

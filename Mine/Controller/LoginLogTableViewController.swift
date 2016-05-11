@@ -26,7 +26,7 @@ class LoginLogTableViewController: UITableViewController {
         let Password = Passwordid.stringForKey("Password")
         let url = apiUrl + "userlogs"
         let param = [
-            "data":"\(Account!),\(Password!)"
+            "data":"\(Account!),\(Password!),10,1"
         ]
         Alamofire.request(.GET, url, parameters: param).response { request, response, json, error in
             if(error != nil){

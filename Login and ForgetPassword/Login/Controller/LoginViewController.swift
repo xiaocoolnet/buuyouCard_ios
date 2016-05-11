@@ -23,6 +23,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         XKeyBoard.registerKeyBoardShow(self)
         //进入时是否隐藏导航条？ 是，隐藏
         self.navigationController?.navigationBar.hidden = true
+        
         AccountText.delegate = self
         PasswordText.delegate = self
         LoginButton.addTarget(self, action: "Login", forControlEvents: UIControlEvents.TouchUpInside)
@@ -93,8 +94,9 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
                     hud.removeFromSuperViewOnHide = true
                     hud.hide(true, afterDelay: 1)
                 }
-                
+
                 if(result.status == 1){
+                    
                     print("Success")
                     let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
                     //hud.mode = MBProgressHUDMode.Text;
@@ -109,8 +111,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
                    
                     let Userid = NSUserDefaults.standardUserDefaults()
                     Userid.setValue(result.data?.Userid, forKey: "Userid")
-                   
-                    
+
                     //let classid = NSUserDefaults.standardUserDefaults()
                     //classid.setValue(result.data?.classid, forKey: "classid")
                     

@@ -13,7 +13,6 @@ class MineMainTableViewController: UITableViewController {
     @IBOutlet var tableSource: UITableView!
     var MineSource = MineList()
     var imageCache = Dictionary<String,UIImage>()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         GetDate()

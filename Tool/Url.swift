@@ -9,3 +9,4 @@
 import Foundation
 
 var apiUrl = "http://app.buuyou.com/api/app?type="
+var NoticeImageUrl = "https://www.buuyou.com"

@@ -125,15 +125,6 @@ class ForgetPasswordViewController: UIViewController {
                     hud.margin = 10.0
                     hud.removeFromSuperViewOnHide = true
                     hud.hide(true, afterDelay: 1)
-                    /*
-                    let Userid = NSUserDefaults.standardUserDefaults()
-                    Userid.setValue(status.data?.Userid, forKey: "Userid")
-                    //let uid = userid.valueForKey("userid")
-                    
-                    let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-                    let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Login")
-                    self.navigationController?.pushViewController(vc, animated: true)
-                    */
                 }
             }
         }

@@ -7,22 +7,22 @@
 import UIKit
 import Alamofire
 import MBProgressHUD
+import XWSwiftRefresh
+
 class CardViewController: UIViewController ,ZHDropDownMenuDelegate,UITableViewDelegate,UITableViewDataSource{
     var OrderSource = OrderList()
-   // @IBOutlet var menu: ZHDropDownMenu!
     
     @IBOutlet var menu: ZHDropDownMenu!
-    //@IBOutlet var menu: ZHDropDownMenu!
     @IBOutlet var tableSource: UITableView!
     @IBOutlet var CardPassword: UITextField!
     @IBOutlet var CardNumber: UITextField!
     @IBOutlet var SubmitButton: UIButton!
+    //定义全局变量data，用来接收下拉菜单选择框的值
+    var data:String!
     
         override func viewDidLoad() {
         super.viewDidLoad()
         //GetDate()
-
-        self.title = "ZHDropDownMenu"
         menu.options = ["5","10","15","20","25","30","50","100","200","300","500","1000"] //设置下拉列表项数据
         menu.editable = false //禁止编辑
         menu.defaultValue = "100" //设置默认值
@@ -33,8 +33,8 @@ class CardViewController: UIViewController ,ZHDropDownMenuDelegate,UITableViewDe
         self.navigationController?.navigationBar.hidden = false
             
             //点击
-        SubmitButton.addTarget(self, action: Selector("Next"), forControlEvents:UIControlEvents.TouchUpInside)
-        SubmitButton.addTarget(self, action: Selector("GetDate"), forControlEvents:UIControlEvents.TouchUpInside)
+        //SubmitButton.addTarget(self, action: Selector("Next"), forControlEvents:UIControlEvents.TouchUpInside)
+        SubmitButton.addTarget(self, action: Selector("Button"), forControlEvents:UIControlEvents.TouchUpInside)
 
             self.tableSource.delegate = self
             self.tableSource.dataSource = self
@@ -43,28 +43,45 @@ class CardViewController: UIViewController ,ZHDropDownMenuDelegate,UITableViewDe
     //选择完后回调
     func dropDownMenu(menu: ZHDropDownMenu!, didChoose index: Int) {
         print("\(menu) choosed at index \(index)")
-        //print( menu)
+        data = menu.options[index]
+        //print(data)
     }
     
     //编辑完成后回调
     func dropDownMenu(menu: ZHDropDownMenu!, didInput text: String!) {
         print("\(menu) input text \(text)")
     }
-    
-    func Next(){
+    //点击提交按钮，先进行点卡寄售，再查看订单
+    func Button(){
+        if Next()==true{
+            //GetDate()
+            DropDownUpdate()
+        }
+    }
+    func DropDownUpdate(){
+
+         self.tableSource.headerView = XWRefreshNormalHeader(target: self, action: "GetDate")
+         self.tableSource.headerView?.beginRefreshing()
+    }
+
+    func Next()->Bool{
         if PandKong()==true{
-            Yanzheng()
+           Yanzheng(data)
+            return true
+        }
+        else{
+            return false
         }
     }
     
-    func Yanzheng(){
+    func Yanzheng(data:String){
         let Accountid = NSUserDefaults.standardUserDefaults()
         let Account = Accountid.stringForKey("Account")
         let Passwordid = NSUserDefaults.standardUserDefaults()
         let Password = Passwordid.stringForKey("Password")
         let url = apiUrl+"cardsales"
         let params = [
-            "data":"\(Account!),\(Password!),\(self.CardNumber.text!),\(self.CardPassword.text!)"
+            "data":"\(Account!),\(Password!),\(data),\(self.CardNumber.text!),\(self.CardPassword.text!)"
         ]
         Alamofire.request(.GET, url, parameters: params).response { request, response, json, error in
             if(error != nil){
@@ -77,7 +94,7 @@ class CardViewController: UIViewController ,ZHDropDownMenuDelegate,UITableViewDe
                 print("data是")
                 print(json!)
                 print("====================")
-                let status = Http(JSONDecoder(json!))
+                let status = HttpY(JSONDecoder(json!))
                 print("状态是")
                 print(status.status)
                 if(status.status == 0){
@@ -93,7 +110,7 @@ class CardViewController: UIViewController ,ZHDropDownMenuDelegate,UITableViewDe
                     print("Success")
                     let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
                     hud.mode = MBProgressHUDMode.Text;
-                    hud.labelText = "密码修改成功"
+                    hud.labelText = "寄售成功"
                     hud.margin = 10.0
                     hud.removeFromSuperViewOnHide = true
                     hud.hide(true, afterDelay: 1)
@@ -163,6 +180,7 @@ class CardViewController: UIViewController ,ZHDropDownMenuDelegate,UITableViewDe
                 }
                 
                 if(status.status == 1){
+                     self.tableSource.headerView?.endRefreshing()
                     self.OrderSource = OrderList(status.data!)
                     self.tableSource.reloadData()
                 }

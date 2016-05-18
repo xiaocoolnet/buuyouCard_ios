@@ -89,6 +89,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
                 if(result.status == 0){
                     let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
                     hud.mode = MBProgressHUDMode.Text;
+                    hud.labelText = "登录失败"
                     hud.labelText = result.errorData
                     hud.margin = 10.0
                     hud.removeFromSuperViewOnHide = true
@@ -112,9 +113,6 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
                     let Userid = NSUserDefaults.standardUserDefaults()
                     Userid.setValue(result.data?.Userid, forKey: "Userid")
 
-                    //let classid = NSUserDefaults.standardUserDefaults()
-                    //classid.setValue(result.data?.classid, forKey: "classid")
-                    
                     //self.GetChildrenUser()
                     let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
                     let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainView")

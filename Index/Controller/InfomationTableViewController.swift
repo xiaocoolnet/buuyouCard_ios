@@ -1,18 +1,18 @@
 //
-//  ChannelRateTableViewController.swift
+//  InfomationTableViewController.swift
 //  BuuYou
 //
-//  Created by 牛尧 on 16/4/19.
+//  Created by 牛尧 on 16/5/18.
 //  Copyright © 2016年 北京校酷网络科技有限公司. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import MBProgressHUD
-class ChannelRateTableViewController: UITableViewController {
 
+class InfomationTableViewController: UITableViewController {
     @IBOutlet var tableSource: UITableView!
-    var RateSource = RateList()
+    var InfoSource = InfoList()
     override func viewDidLoad() {
         super.viewDidLoad()
         GetDate()
@@ -24,7 +24,7 @@ class ChannelRateTableViewController: UITableViewController {
         let Account = Accountid.stringForKey("Account")
         let Passwordid = NSUserDefaults.standardUserDefaults()
         let Password = Passwordid.stringForKey("Password")
-        let url = apiUrl + "channelrate"
+        let url = apiUrl + "transactioninfo"
         let param = [
             "data":"\(Account!),\(Password!)"
         ]
@@ -47,29 +47,40 @@ class ChannelRateTableViewController: UITableViewController {
                     hud.hide(true, afterDelay: 1)
                 }
                 if(status.status == 1){
-                    self.RateSource = RateList(status.data!)
+                    self.InfoSource = InfoList(status.data!)
                     self.tableSource.reloadData()
                 }
             }
         }
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Table view data source
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return RateSource.count
+        return InfoSource.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RateCell", forIndexPath: indexPath) as!ChannelRateTableViewCell
-        let rateInfo = self.RateSource.objectlist[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("InfoCell", forIndexPath: indexPath) as!InfoTableViewCell
+        
+        let Info = self.InfoSource.objectlist[indexPath.row]
         let dateformate = NSDateFormatter()
         dateformate.dateFormat = "MM-dd"
-        cell.PayName.text = rateInfo.ChannelName!
-        cell.Rate.text = rateInfo.ChannelRate!
-        cell.State.text = rateInfo.ChannelState!
+        cell.AllOrder.text = String(Info.allnum!)
+        cell.AllMoney.text = String(Info.allmoney!)
+        cell.TodayOrder.text = String(Info.todaynum!)
+        cell.TodayMoney.text = String(Info.todaymoney!)
+        cell.YesterdayOrder.text = String(Info.yesterdaynum!)
+        cell.YesterdayMoney.text = String(Info.yesterdaymoney!)
         return cell
     }
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
@@ -79,5 +90,5 @@ class ChannelRateTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 5.0
     }
-    
+
 }

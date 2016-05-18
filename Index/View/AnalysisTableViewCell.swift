@@ -1,20 +1,19 @@
 //
-//  OrdersTableViewCell.swift
+//  AnalysisTableViewCell.swift
 //  BuuYou
 //
-//  Created by 牛尧 on 16/5/10.
+//  Created by 牛尧 on 16/5/14.
 //  Copyright © 2016年 北京校酷网络科技有限公司. All rights reserved.
 //
 
 import UIKit
 
-class OrdersTableViewCell: UITableViewCell {
+class AnalysisTableViewCell: UITableViewCell {
+
     @IBOutlet var CardName: UILabel!
-    @IBOutlet var PayStatus: UILabel!
-    @IBOutlet var CardNumber: UILabel!
-    @IBOutlet var PayTime: UILabel!
-    @IBOutlet var OrderMoney: UILabel!
-    @IBOutlet var Realmoney: UILabel!
+    @IBOutlet var SuccessNumber: UILabel!
+    @IBOutlet var Number: UILabel!
+    @IBOutlet var SuccessOrder: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,5 +24,5 @@ class OrdersTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

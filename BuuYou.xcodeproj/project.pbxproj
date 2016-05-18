@@ -40,6 +40,9 @@
 		041B02871CC62A790050E84C /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B02861CC62A790050E84C /* AboutTableViewController.swift */; };
 		041B02891CC62A8D0050E84C /* AboutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B02881CC62A8D0050E84C /* AboutList.swift */; };
 		041B028B1CC62AA10050E84C /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B028A1CC62AA10050E84C /* AboutTableViewCell.swift */; };
+		041E834A1CE74CEE00AD7CBA /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E83491CE74CEE00AD7CBA /* AnalysisViewController.swift */; };
+		041E834C1CE74D2F00AD7CBA /* AnalysisList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E834B1CE74D2F00AD7CBA /* AnalysisList.swift */; };
+		041E834E1CE74D5400AD7CBA /* AnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E834D1CE74D5400AD7CBA /* AnalysisTableViewCell.swift */; };
 		0422BE841CC0709700684F45 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422BE831CC0709700684F45 /* MineTableViewCell.swift */; };
 		0422BE861CC070CD00684F45 /*  MineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422BE851CC070CD00684F45 /*  MineList.swift */; };
 		042581F31CE0C20600CA5A0F /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042581F21CE0C20600CA5A0F /* OrderList.swift */; };
@@ -51,6 +54,8 @@
 		042635961CC5D55600BB9A44 /* LoginLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042635951CC5D55600BB9A44 /* LoginLogTableViewCell.swift */; };
 		042635981CC5D56700BB9A44 /* LogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042635971CC5D56700BB9A44 /* LogList.swift */; };
 		0434C7B81CE062B500A3B54E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434C7B71CE062B500A3B54E /* CardViewController.swift */; };
+		046B958E1CE56DA3000CE2D2 /* ConsignTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B958D1CE56DA3000CE2D2 /* ConsignTableViewController.swift */; };
+		046B95901CE573B9000CE2D2 /* ConsignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B958F1CE573B9000CE2D2 /* ConsignTableViewCell.swift */; };
 		04824E411CBA930B00B03234 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04824E401CBA930B00B03234 /* ForgetPasswordViewController.swift */; };
 		04824E431CBA9DB300B03234 /* ForgetPasswordSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04824E421CBA9DB300B03234 /* ForgetPasswordSetViewController.swift */; };
 		04827DAC1CB3AC5100E51DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04827DAB1CB3AC5100E51DEE /* AppDelegate.swift */; };
@@ -60,12 +65,19 @@
 		04827DB61CB3AC5100E51DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04827DB41CB3AC5100E51DEE /* LaunchScreen.storyboard */; };
 		048458B41CE3313F00B4A22A /* ZHDropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048458B31CE3313F00B4A22A /* ZHDropDownMenu.swift */; };
 		048524871CB6799400303D4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048524861CB6799400303D4E /* LoginViewController.swift */; };
+		048E2ED51CEC643B00311D3B /* InfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2ED41CEC643B00311D3B /* InfoList.swift */; };
+		048E2ED71CEC646A00311D3B /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2ED61CEC646A00311D3B /* InfoTableViewCell.swift */; };
+		048E2ED91CEC671D00311D3B /* InfomationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2ED81CEC671D00311D3B /* InfomationTableViewController.swift */; };
+		048E2EDB1CEC734700311D3B /* FinanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2EDA1CEC734700311D3B /* FinanceTableViewController.swift */; };
+		048E2EDD1CEC735900311D3B /* FinanceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2EDC1CEC735900311D3B /* FinanceList.swift */; };
+		048E2EDF1CEC736A00311D3B /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2EDE1CEC736A00311D3B /* FinanceTableViewCell.swift */; };
 		04B72DC31CE1893200CAC33B /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B72DC11CE1893200CAC33B /* OrdersTableViewCell.swift */; };
 		04C209131CCB1C30006C35A8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C209121CCB1C30006C35A8 /* WebViewController.swift */; };
 		04C209151CCB200D006C35A8 /* WebTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C209141CCB200D006C35A8 /* WebTableViewController.swift */; };
 		04C209191CCB2034006C35A8 /* WebTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C209181CCB2034006C35A8 /* WebTableViewCell.swift */; };
 		04CCCC5A1CBC86460030D494 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCCC591CBC86460030D494 /* MainTabbarViewController.swift */; };
 		04CCCC5C1CBCC3BE0030D494 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCCC5B1CBCC3BE0030D494 /* Http.swift */; };
+		04DC388F1CE46E8F00C78A2C /* ConsignOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC388E1CE46E8F00C78A2C /* ConsignOrderViewController.swift */; };
 		04E488291CC86ED500D75D66 /* NoticeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E488281CC86ED500D75D66 /* NoticeTableViewController.swift */; };
 		04E4882B1CC86EF200D75D66 /* NoticeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4882A1CC86EF200D75D66 /* NoticeList.swift */; };
 		04E4882D1CC86F0C00D75D66 /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4882C1CC86F0C00D75D66 /* NoticeTableViewCell.swift */; };
@@ -118,6 +130,9 @@
 		041B02861CC62A790050E84C /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		041B02881CC62A8D0050E84C /* AboutList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutList.swift; sourceTree = "<group>"; };
 		041B028A1CC62AA10050E84C /* AboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		041E83491CE74CEE00AD7CBA /* AnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		041E834B1CE74D2F00AD7CBA /* AnalysisList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisList.swift; sourceTree = "<group>"; };
+		041E834D1CE74D5400AD7CBA /* AnalysisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisTableViewCell.swift; sourceTree = "<group>"; };
 		0422BE831CC0709700684F45 /* MineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		0422BE851CC070CD00684F45 /*  MineList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " MineList.swift"; sourceTree = "<group>"; };
 		042581F21CE0C20600CA5A0F /* OrderList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
@@ -129,6 +144,8 @@
 		042635951CC5D55600BB9A44 /* LoginLogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLogTableViewCell.swift; sourceTree = "<group>"; };
 		042635971CC5D56700BB9A44 /* LogList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogList.swift; sourceTree = "<group>"; };
 		0434C7B71CE062B500A3B54E /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		046B958D1CE56DA3000CE2D2 /* ConsignTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsignTableViewController.swift; sourceTree = "<group>"; };
+		046B958F1CE573B9000CE2D2 /* ConsignTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsignTableViewCell.swift; sourceTree = "<group>"; };
 		04824E401CBA930B00B03234 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgetPasswordViewController.swift; path = ../../Login/Controller/ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		04824E421CBA9DB300B03234 /* ForgetPasswordSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordSetViewController.swift; sourceTree = "<group>"; };
 		04827DA81CB3AC5000E51DEE /* BuuYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuuYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,12 +158,19 @@
 		048458B31CE3313F00B4A22A /* ZHDropDownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHDropDownMenu.swift; sourceTree = "<group>"; };
 		048524861CB6799400303D4E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0485248B1CB67D9700303D4E /* BuuYou-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuuYou-Bridging-Header.h"; sourceTree = "<group>"; };
+		048E2ED41CEC643B00311D3B /* InfoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoList.swift; sourceTree = "<group>"; };
+		048E2ED61CEC646A00311D3B /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		048E2ED81CEC671D00311D3B /* InfomationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfomationTableViewController.swift; sourceTree = "<group>"; };
+		048E2EDA1CEC734700311D3B /* FinanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceTableViewController.swift; sourceTree = "<group>"; };
+		048E2EDC1CEC735900311D3B /* FinanceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceList.swift; sourceTree = "<group>"; };
+		048E2EDE1CEC736A00311D3B /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
 		04B72DC11CE1893200CAC33B /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
 		04C209121CCB1C30006C35A8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		04C209141CCB200D006C35A8 /* WebTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebTableViewController.swift; sourceTree = "<group>"; };
 		04C209181CCB2034006C35A8 /* WebTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebTableViewCell.swift; sourceTree = "<group>"; };
 		04CCCC591CBC86460030D494 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		04CCCC5B1CBCC3BE0030D494 /* Http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		04DC388E1CE46E8F00C78A2C /* ConsignOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsignOrderViewController.swift; sourceTree = "<group>"; };
 		04E488281CC86ED500D75D66 /* NoticeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeTableViewController.swift; sourceTree = "<group>"; };
 		04E4882A1CC86EF200D75D66 /* NoticeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeList.swift; sourceTree = "<group>"; };
 		04E4882C1CC86F0C00D75D66 /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +222,11 @@
 				041038E71CC8BD6800DA326D /* IndexTableViewController.swift */,
 				0434C7B71CE062B500A3B54E /* CardViewController.swift */,
 				048458B31CE3313F00B4A22A /* ZHDropDownMenu.swift */,
+				04DC388E1CE46E8F00C78A2C /* ConsignOrderViewController.swift */,
+				046B958D1CE56DA3000CE2D2 /* ConsignTableViewController.swift */,
+				041E83491CE74CEE00AD7CBA /* AnalysisViewController.swift */,
+				048E2ED81CEC671D00311D3B /* InfomationTableViewController.swift */,
+				048E2EDA1CEC734700311D3B /* FinanceTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,6 +237,9 @@
 				0407B28D1CB3B612008EE9F0 /* Readme */,
 				041038E91CC8BEB100DA326D /* IndexList.swift */,
 				042581F21CE0C20600CA5A0F /* OrderList.swift */,
+				041E834B1CE74D2F00AD7CBA /* AnalysisList.swift */,
+				048E2ED41CEC643B00311D3B /* InfoList.swift */,
+				048E2EDC1CEC735900311D3B /* FinanceList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +250,10 @@
 				0407B28F1CB3B61D008EE9F0 /* Readme */,
 				041038EB1CC8BEC900DA326D /* IndexTableViewCell.swift */,
 				04B72DC11CE1893200CAC33B /* OrdersTableViewCell.swift */,
+				046B958F1CE573B9000CE2D2 /* ConsignTableViewCell.swift */,
+				041E834D1CE74D5400AD7CBA /* AnalysisTableViewCell.swift */,
+				048E2ED61CEC646A00311D3B /* InfoTableViewCell.swift */,
+				048E2EDE1CEC736A00311D3B /* FinanceTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -725,23 +761,34 @@
 				041038E81CC8BD6800DA326D /* IndexTableViewController.swift in Sources */,
 				0410D0051CC0F6A8007A9160 /* HttpY.swift in Sources */,
 				042635941CC5D52B00BB9A44 /* LoginLogTableViewController.swift in Sources */,
+				048E2EDD1CEC735900311D3B /* FinanceList.swift in Sources */,
 				041159671CBFF2B000BC78D1 /* MineMainTableViewController.swift in Sources */,
 				042635961CC5D55600BB9A44 /* LoginLogTableViewCell.swift in Sources */,
 				041B028B1CC62AA10050E84C /* AboutTableViewCell.swift in Sources */,
 				048524871CB6799400303D4E /* LoginViewController.swift in Sources */,
 				042635981CC5D56700BB9A44 /* LogList.swift in Sources */,
+				048E2EDF1CEC736A00311D3B /* FinanceTableViewCell.swift in Sources */,
+				046B95901CE573B9000CE2D2 /* ConsignTableViewCell.swift in Sources */,
 				04E4882B1CC86EF200D75D66 /* NoticeList.swift in Sources */,
+				046B958E1CE56DA3000CE2D2 /* ConsignTableViewController.swift in Sources */,
 				04F02C7F1CC239AF007C366D /* AccountDataTableViewCell.swift in Sources */,
+				048E2EDB1CEC734700311D3B /* FinanceTableViewController.swift in Sources */,
 				04824E431CBA9DB300B03234 /* ForgetPasswordSetViewController.swift in Sources */,
+				048E2ED71CEC646A00311D3B /* InfoTableViewCell.swift in Sources */,
+				048E2ED91CEC671D00311D3B /* InfomationTableViewController.swift in Sources */,
 				04CCCC5C1CBCC3BE0030D494 /* Http.swift in Sources */,
+				048E2ED51CEC643B00311D3B /* InfoList.swift in Sources */,
 				04E808691CB8F5CC002DCA34 /* JSONJoy.swift in Sources */,
 				04E808621CB8F282002DCA34 /* Httpresult.swift in Sources */,
 				04F02C7D1CC23994007C366D /* AccountDataList.swift in Sources */,
 				042581F31CE0C20600CA5A0F /* OrderList.swift in Sources */,
+				041E834A1CE74CEE00AD7CBA /* AnalysisViewController.swift in Sources */,
 				04F02C751CC2055B007C366D /* InformationList.swift in Sources */,
 				041B02811CC6109F0050E84C /* ChannelRateTableViewController.swift in Sources */,
 				041B02851CC610DD0050E84C /* ChannelRateTableViewCell.swift in Sources */,
+				04DC388F1CE46E8F00C78A2C /* ConsignOrderViewController.swift in Sources */,
 				0426358E1CC5C09500BB9A44 /* SafeList.swift in Sources */,
+				041E834E1CE74D5400AD7CBA /* AnalysisTableViewCell.swift in Sources */,
 				04F02C7B1CC23982007C366D /* AccountDataTableViewController.swift in Sources */,
 				04E4882D1CC86F0C00D75D66 /* NoticeTableViewCell.swift in Sources */,
 				042635921CC5C86B00BB9A44 /* UpdatePasswordViewController.swift in Sources */,
@@ -756,6 +803,7 @@
 				04C209131CCB1C30006C35A8 /* WebViewController.swift in Sources */,
 				0422BE841CC0709700684F45 /* MineTableViewCell.swift in Sources */,
 				041B02891CC62A8D0050E84C /* AboutList.swift in Sources */,
+				041E834C1CE74D2F00AD7CBA /* AnalysisList.swift in Sources */,
 				0426358C1CC5C05C00BB9A44 /* SafeCenterTableViewController.swift in Sources */,
 				041B02831CC610BC0050E84C /* RateList.swift in Sources */,
 			);

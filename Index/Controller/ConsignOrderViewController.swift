@@ -77,7 +77,7 @@ class ConsignOrderViewController: UIViewController ,ZHDropDownMenuDelegate{
         {
         StuNumber = 3
         }
-    
+        
     }
     
     //编辑完成后回调
@@ -111,7 +111,7 @@ class ConsignOrderViewController: UIViewController ,ZHDropDownMenuDelegate{
         dateFormatter.dateFormat = "yyyy-MM-dd"
         pickDate = dateFormatter.stringFromDate(datePicker.date)
         dateButton.setTitle(pickDate, forState: .Normal)
-        print(pickDate)
+       
     }
     func datePickerChanged2() {
         //将日期格式汉化
@@ -121,17 +121,17 @@ class ConsignOrderViewController: UIViewController ,ZHDropDownMenuDelegate{
         dateFormatter2.dateFormat = "yyyy-MM-dd"
         pickDate2 = dateFormatter2.stringFromDate(datePicker2.date)
         dateButton2.setTitle(pickDate2, forState: .Normal)
-        print(pickDate2)
-    }
+        }
     
     func HuanCun(){
         let  Number = NSUserDefaults.standardUserDefaults().setObject(self.CardNumber.text, forKey: "Number")
+        let  Pick = NSUserDefaults.standardUserDefaults().setObject(pickDate2, forKey: "Pick")
         //缓存整型变量的值
         var userDefault = NSUserDefaults.standardUserDefaults()
         userDefault.setInteger(StuNumber!, forKey: "Int")
        //缓存字符串型变量的值
         userDefault.setObject(pickDate, forKey: "NSString")
-        userDefault.setObject(pickDate2, forKey: "String")
+        //userDefault.setObject(pickDate2, forKey: "String")
     }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)

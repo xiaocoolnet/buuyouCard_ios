@@ -32,17 +32,20 @@ class ConsignTableViewController: UITableViewController {
         let Password = Passwordid.stringForKey("Password")
         let Numberid = NSUserDefaults.standardUserDefaults()
         let Number = Numberid.stringForKey("Number")
+        let Pickid = NSUserDefaults.standardUserDefaults()
+        let Pick = Pickid.stringForKey("Pick")
+
        //取缓存整型变量的值
         var userDefault = NSUserDefaults.standardUserDefaults()
         var intValue = userDefault.integerForKey("Int")
         //两种形式取字符串型变量的值
         var DateValue = userDefault.objectForKey("NSString") as! NSString
-        var Date = userDefault.objectForKey("String") as! String
+        //var Date = userDefault.objectForKey("String") as! String
         let url = apiUrl+"orderlist"
         // 点卡类型入参问题待解决
         //let str = "QQ卡"
         let params = [
-             "data":"\(Account!),\(Password!),\(DateValue),\(Date),,,,\(Number!),\(intValue),1,100,1"
+             "data":"\(Account!),\(Password!),\(DateValue),\(Pick),,,,\(Number!),\(intValue),1,100,1"
         ]
         Alamofire.request(.GET, url, parameters: params).response { request, response, json, error in
             if(error != nil){
@@ -72,10 +75,6 @@ class ConsignTableViewController: UITableViewController {
                     self.tableSource.headerView?.endRefreshing()
                     self.OrderSource = OrderList(status.data!)
                     self.tableSource.reloadData()
-                    print(DateValue)
-                   
-                    
-                    print(intValue)
                 }
             }
         }

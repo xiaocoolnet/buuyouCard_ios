@@ -22,7 +22,7 @@ class PayingViewController: UIViewController,ZHDropDownMenuDelegate {
     //定义全局变量data，用来接收下拉菜单选择框的值
     var data1:String!
     var data2:String!
-    var StuNumber:Int?
+    var StuNumber:String?
     var pickDate:String?
     var pickDate2:String?
     var datePickerHidden = true
@@ -44,14 +44,13 @@ class PayingViewController: UIViewController,ZHDropDownMenuDelegate {
         menu1.showBorder = false   //不显示边框
         menu1.delegate = self
         //此处查看接口
-        menu2.options = ["所有类型","网银","点卡","支付宝","财付通","微信","手机支付宝","手机财付通","手机QQ","其他"] //设置下拉列表项数据
+        menu2.options = ["所有类型","网银","点卡","支付宝","财付通","微信","其他"] //设置下拉列表项数据
         menu2.editable = false //禁止编辑
         menu2.defaultValue = "所有状态" //设置默认值
         menu2.showBorder = false   //不显示边框
         //设置代理
         menu2.delegate = self
         SubmitButton.addTarget(self, action: Selector("HuanCun"), forControlEvents:UIControlEvents.TouchUpInside)
-        
         
     }
     //选择完后回调
@@ -60,21 +59,26 @@ class PayingViewController: UIViewController,ZHDropDownMenuDelegate {
         data1 = menu1.options[index]
         data2 = menu2.options[index]
         
-        if(data2 == "成功"){
-            StuNumber = 1
+        if(data2 == "网银"){
+            StuNumber = String(1)
         }
         
-        if(data2 == "失败"){
-            StuNumber = 2
+        if(data2 == "点卡"){
+            StuNumber = String(2)
         }
         
-        if(data2 == "处理中"){
-            StuNumber = 0
+        if(data2 == "支付宝"){
+            StuNumber = String(3)
         }
         
-        if(data2 == "所有状态")
+        if(data2 == "财付通")
         {
-            StuNumber = 3
+            StuNumber = String(4)
+        }
+        
+        if(data2 == "微信")
+        {
+            StuNumber = String(5)
         }
         
     }
@@ -125,12 +129,13 @@ class PayingViewController: UIViewController,ZHDropDownMenuDelegate {
     func HuanCun(){
         let  Number = NSUserDefaults.standardUserDefaults().setObject(self.CardNumber.text, forKey: "Number")
         let  OrNumber = NSUserDefaults.standardUserDefaults().setObject(self.OrderNumber.text, forKey: "OrNumber")
+        let  SNumber = NSUserDefaults.standardUserDefaults().setObject(StuNumber, forKey: "SNumber")
+        let  Pick = NSUserDefaults.standardUserDefaults().setObject(pickDate2, forKey: "Pick")
         //缓存整型变量的值
         var userDefault = NSUserDefaults.standardUserDefaults()
-        userDefault.setInteger(StuNumber!, forKey: "Int")
+        //userDefault.setInteger(StuNumber!, forKey: "Int")
         //缓存字符串型变量的值
         userDefault.setObject(pickDate, forKey: "NSString")
-        userDefault.setObject(pickDate2, forKey: "String")
     }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)

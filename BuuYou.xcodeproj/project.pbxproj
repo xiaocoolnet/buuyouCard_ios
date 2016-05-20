@@ -56,6 +56,17 @@
 		0434C7B81CE062B500A3B54E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434C7B71CE062B500A3B54E /* CardViewController.swift */; };
 		046B958E1CE56DA3000CE2D2 /* ConsignTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B958D1CE56DA3000CE2D2 /* ConsignTableViewController.swift */; };
 		046B95901CE573B9000CE2D2 /* ConsignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B958F1CE573B9000CE2D2 /* ConsignTableViewCell.swift */; };
+		048247871CED4DB0003ABBE6 /* LoseOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048247861CED4DB0003ABBE6 /* LoseOrderTableViewController.swift */; };
+		048247891CED4DD4003ABBE6 /* LoseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048247881CED4DD4003ABBE6 /* LoseList.swift */; };
+		0482478B1CED4DF4003ABBE6 /* LoseOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482478A1CED4DF4003ABBE6 /* LoseOrderTableViewCell.swift */; };
+		0482478D1CED8918003ABBE6 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482478C1CED8918003ABBE6 /* SuccessViewController.swift */; };
+		0482478F1CED9A74003ABBE6 /* TotalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482478E1CED9A74003ABBE6 /* TotalList.swift */; };
+		048247911CED9A8A003ABBE6 /* TotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048247901CED9A8A003ABBE6 /* TotalTableViewCell.swift */; };
+		048247951CEDB5BB003ABBE6 /* SuccessOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048247941CEDB5BB003ABBE6 /* SuccessOrderTableViewController.swift */; };
+		048247971CEE03A8003ABBE6 /* PayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048247961CEE03A8003ABBE6 /* PayingViewController.swift */; };
+		048247991CEE03D4003ABBE6 /* PayingOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048247981CEE03D4003ABBE6 /* PayingOrderTableViewController.swift */; };
+		0482479B1CEE03F1003ABBE6 /* PayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482479A1CEE03F1003ABBE6 /* PayList.swift */; };
+		0482479D1CEE0414003ABBE6 /* PayingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482479C1CEE0414003ABBE6 /* PayingTableViewCell.swift */; };
 		04824E411CBA930B00B03234 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04824E401CBA930B00B03234 /* ForgetPasswordViewController.swift */; };
 		04824E431CBA9DB300B03234 /* ForgetPasswordSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04824E421CBA9DB300B03234 /* ForgetPasswordSetViewController.swift */; };
 		04827DAC1CB3AC5100E51DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04827DAB1CB3AC5100E51DEE /* AppDelegate.swift */; };
@@ -71,6 +82,7 @@
 		048E2EDB1CEC734700311D3B /* FinanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2EDA1CEC734700311D3B /* FinanceTableViewController.swift */; };
 		048E2EDD1CEC735900311D3B /* FinanceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2EDC1CEC735900311D3B /* FinanceList.swift */; };
 		048E2EDF1CEC736A00311D3B /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2EDE1CEC736A00311D3B /* FinanceTableViewCell.swift */; };
+		049B76E91CECA58F008E25D9 /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B76E81CECA58F008E25D9 /* LoseViewController.swift */; };
 		04B72DC31CE1893200CAC33B /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B72DC11CE1893200CAC33B /* OrdersTableViewCell.swift */; };
 		04C209131CCB1C30006C35A8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C209121CCB1C30006C35A8 /* WebViewController.swift */; };
 		04C209151CCB200D006C35A8 /* WebTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C209141CCB200D006C35A8 /* WebTableViewController.swift */; };
@@ -146,6 +158,17 @@
 		0434C7B71CE062B500A3B54E /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		046B958D1CE56DA3000CE2D2 /* ConsignTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsignTableViewController.swift; sourceTree = "<group>"; };
 		046B958F1CE573B9000CE2D2 /* ConsignTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsignTableViewCell.swift; sourceTree = "<group>"; };
+		048247861CED4DB0003ABBE6 /* LoseOrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseOrderTableViewController.swift; sourceTree = "<group>"; };
+		048247881CED4DD4003ABBE6 /* LoseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseList.swift; sourceTree = "<group>"; };
+		0482478A1CED4DF4003ABBE6 /* LoseOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseOrderTableViewCell.swift; sourceTree = "<group>"; };
+		0482478C1CED8918003ABBE6 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		0482478E1CED9A74003ABBE6 /* TotalList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalList.swift; sourceTree = "<group>"; };
+		048247901CED9A8A003ABBE6 /* TotalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalTableViewCell.swift; sourceTree = "<group>"; };
+		048247941CEDB5BB003ABBE6 /* SuccessOrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessOrderTableViewController.swift; sourceTree = "<group>"; };
+		048247961CEE03A8003ABBE6 /* PayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayingViewController.swift; sourceTree = "<group>"; };
+		048247981CEE03D4003ABBE6 /* PayingOrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayingOrderTableViewController.swift; sourceTree = "<group>"; };
+		0482479A1CEE03F1003ABBE6 /* PayList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayList.swift; sourceTree = "<group>"; };
+		0482479C1CEE0414003ABBE6 /* PayingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayingTableViewCell.swift; sourceTree = "<group>"; };
 		04824E401CBA930B00B03234 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgetPasswordViewController.swift; path = ../../Login/Controller/ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		04824E421CBA9DB300B03234 /* ForgetPasswordSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordSetViewController.swift; sourceTree = "<group>"; };
 		04827DA81CB3AC5000E51DEE /* BuuYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuuYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +187,7 @@
 		048E2EDA1CEC734700311D3B /* FinanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceTableViewController.swift; sourceTree = "<group>"; };
 		048E2EDC1CEC735900311D3B /* FinanceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceList.swift; sourceTree = "<group>"; };
 		048E2EDE1CEC736A00311D3B /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
+		049B76E81CECA58F008E25D9 /* LoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 		04B72DC11CE1893200CAC33B /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
 		04C209121CCB1C30006C35A8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		04C209141CCB200D006C35A8 /* WebTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebTableViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +251,12 @@
 				041E83491CE74CEE00AD7CBA /* AnalysisViewController.swift */,
 				048E2ED81CEC671D00311D3B /* InfomationTableViewController.swift */,
 				048E2EDA1CEC734700311D3B /* FinanceTableViewController.swift */,
+				049B76E81CECA58F008E25D9 /* LoseViewController.swift */,
+				048247861CED4DB0003ABBE6 /* LoseOrderTableViewController.swift */,
+				0482478C1CED8918003ABBE6 /* SuccessViewController.swift */,
+				048247941CEDB5BB003ABBE6 /* SuccessOrderTableViewController.swift */,
+				048247961CEE03A8003ABBE6 /* PayingViewController.swift */,
+				048247981CEE03D4003ABBE6 /* PayingOrderTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +270,9 @@
 				041E834B1CE74D2F00AD7CBA /* AnalysisList.swift */,
 				048E2ED41CEC643B00311D3B /* InfoList.swift */,
 				048E2EDC1CEC735900311D3B /* FinanceList.swift */,
+				048247881CED4DD4003ABBE6 /* LoseList.swift */,
+				0482478E1CED9A74003ABBE6 /* TotalList.swift */,
+				0482479A1CEE03F1003ABBE6 /* PayList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +287,9 @@
 				041E834D1CE74D5400AD7CBA /* AnalysisTableViewCell.swift */,
 				048E2ED61CEC646A00311D3B /* InfoTableViewCell.swift */,
 				048E2EDE1CEC736A00311D3B /* FinanceTableViewCell.swift */,
+				0482478A1CED4DF4003ABBE6 /* LoseOrderTableViewCell.swift */,
+				048247901CED9A8A003ABBE6 /* TotalTableViewCell.swift */,
+				0482479C1CEE0414003ABBE6 /* PayingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -747,22 +783,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048247971CEE03A8003ABBE6 /* PayingViewController.swift in Sources */,
 				041038EA1CC8BEB100DA326D /* IndexList.swift in Sources */,
 				04E488291CC86ED500D75D66 /* NoticeTableViewController.swift in Sources */,
 				04B72DC31CE1893200CAC33B /* OrdersTableViewCell.swift in Sources */,
 				048458B41CE3313F00B4A22A /* ZHDropDownMenu.swift in Sources */,
 				04F02C771CC2057A007C366D /* InformationTableViewCell.swift in Sources */,
 				04E808651CB8F512002DCA34 /* XKeyBoard.m in Sources */,
+				048247871CED4DB0003ABBE6 /* LoseOrderTableViewController.swift in Sources */,
 				04CCCC5A1CBC86460030D494 /* MainTabbarViewController.swift in Sources */,
 				042635901CC5C0AF00BB9A44 /* SafeCenterTableViewCell.swift in Sources */,
 				041038EC1CC8BEC900DA326D /* IndexTableViewCell.swift in Sources */,
 				04E808601CB8F022002DCA34 /* Url.swift in Sources */,
+				0482478F1CED9A74003ABBE6 /* TotalList.swift in Sources */,
 				0434C7B81CE062B500A3B54E /* CardViewController.swift in Sources */,
+				0482478B1CED4DF4003ABBE6 /* LoseOrderTableViewCell.swift in Sources */,
 				041038E81CC8BD6800DA326D /* IndexTableViewController.swift in Sources */,
+				0482478D1CED8918003ABBE6 /* SuccessViewController.swift in Sources */,
 				0410D0051CC0F6A8007A9160 /* HttpY.swift in Sources */,
 				042635941CC5D52B00BB9A44 /* LoginLogTableViewController.swift in Sources */,
 				048E2EDD1CEC735900311D3B /* FinanceList.swift in Sources */,
 				041159671CBFF2B000BC78D1 /* MineMainTableViewController.swift in Sources */,
+				0482479D1CEE0414003ABBE6 /* PayingTableViewCell.swift in Sources */,
 				042635961CC5D55600BB9A44 /* LoginLogTableViewCell.swift in Sources */,
 				041B028B1CC62AA10050E84C /* AboutTableViewCell.swift in Sources */,
 				048524871CB6799400303D4E /* LoginViewController.swift in Sources */,
@@ -770,9 +812,11 @@
 				048E2EDF1CEC736A00311D3B /* FinanceTableViewCell.swift in Sources */,
 				046B95901CE573B9000CE2D2 /* ConsignTableViewCell.swift in Sources */,
 				04E4882B1CC86EF200D75D66 /* NoticeList.swift in Sources */,
+				048247891CED4DD4003ABBE6 /* LoseList.swift in Sources */,
 				046B958E1CE56DA3000CE2D2 /* ConsignTableViewController.swift in Sources */,
 				04F02C7F1CC239AF007C366D /* AccountDataTableViewCell.swift in Sources */,
 				048E2EDB1CEC734700311D3B /* FinanceTableViewController.swift in Sources */,
+				0482479B1CEE03F1003ABBE6 /* PayList.swift in Sources */,
 				04824E431CBA9DB300B03234 /* ForgetPasswordSetViewController.swift in Sources */,
 				048E2ED71CEC646A00311D3B /* InfoTableViewCell.swift in Sources */,
 				048E2ED91CEC671D00311D3B /* InfomationTableViewController.swift in Sources */,
@@ -798,11 +842,15 @@
 				0422BE861CC070CD00684F45 /*  MineList.swift in Sources */,
 				041B02871CC62A790050E84C /* AboutTableViewController.swift in Sources */,
 				04824E411CBA930B00B03234 /* ForgetPasswordViewController.swift in Sources */,
+				048247991CEE03D4003ABBE6 /* PayingOrderTableViewController.swift in Sources */,
+				048247951CEDB5BB003ABBE6 /* SuccessOrderTableViewController.swift in Sources */,
 				04C209151CCB200D006C35A8 /* WebTableViewController.swift in Sources */,
 				04C209191CCB2034006C35A8 /* WebTableViewCell.swift in Sources */,
+				049B76E91CECA58F008E25D9 /* LoseViewController.swift in Sources */,
 				04C209131CCB1C30006C35A8 /* WebViewController.swift in Sources */,
 				0422BE841CC0709700684F45 /* MineTableViewCell.swift in Sources */,
 				041B02891CC62A8D0050E84C /* AboutList.swift in Sources */,
+				048247911CED9A8A003ABBE6 /* TotalTableViewCell.swift in Sources */,
 				041E834C1CE74D2F00AD7CBA /* AnalysisList.swift in Sources */,
 				0426358C1CC5C05C00BB9A44 /* SafeCenterTableViewController.swift in Sources */,
 				041B02831CC610BC0050E84C /* RateList.swift in Sources */,

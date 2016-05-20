@@ -135,7 +135,7 @@ public protocol ZHDropDownMenuDelegate:class{
         
         self.showBorder = true
         self.textColor = UIColor.darkGrayColor()
-        self.font = UIFont.systemFontOfSize(16)
+        self.font = UIFont.systemFontOfSize(15)
     }
     
     func showOrHide() {

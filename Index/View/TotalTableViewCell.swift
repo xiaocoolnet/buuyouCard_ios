@@ -1,19 +1,21 @@
 //
-//  FinanceTableViewCell.swift
+//  TotalTableViewCell.swift
 //  BuuYou
 //
-//  Created by 牛尧 on 16/5/18.
+//  Created by 牛尧 on 16/5/19.
 //  Copyright © 2016年 北京校酷网络科技有限公司. All rights reserved.
 //
 
 import UIKit
 
-class FinanceTableViewCell: UITableViewCell {
-    @IBOutlet var TotalBalance: UILabel!
-    @IBOutlet var AvailableBalance: UILabel!
-    @IBOutlet var UserMoney: UILabel!
-    @IBOutlet var RunningMoney: UILabel!
-    override func awakeFromNib() {
+class TotalTableViewCell: UITableViewCell {
+    
+    @IBOutlet var CardName: UILabel!
+    @IBOutlet var OrderMoney: UILabel!
+    @IBOutlet var Time: UILabel!
+    @IBOutlet var TansactionMoney: UILabel!
+    @IBOutlet var DividedMoney: UILabel!
+       override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
